@@ -1,0 +1,2 @@
+import mongoose from "mongoose"
+export const connectDB = ()=>{mongoose.connect(process.env.MONGO_URL, {dbName: 'todo'}).then(console.log("Connected to Databse")).catch("Failed to Connect to Database")}
